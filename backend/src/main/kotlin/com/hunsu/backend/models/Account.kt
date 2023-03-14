@@ -8,13 +8,13 @@ data class Account (var createdAt: OffsetDateTime = OffsetDateTime.now(),
                     var updatedAt: OffsetDateTime = OffsetDateTime.now(),
 
                     @Column(unique = true)
-                 var username: String = "",
+                    var username: String = "",
                     var password: String = "",
 
                     @Column(unique = true)
-                 var displayName: String = "",
+                    var displayName: String = "",
 
                     @Id
-                 @GeneratedValue(strategy = GenerationType.AUTO)
-                 var id: Long? = null,
+                    @GeneratedValue(strategy = GenerationType.AUTO)
+                    var id: Long? = null,
 )
